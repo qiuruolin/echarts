@@ -48,7 +48,7 @@ let option = {
             name: '邮件营销',
             type: 'line',
             stack: '总量',
-            areaStyle: {},
+            // areaStyle: {}, //注释后则成为多条折线图(无面积阴影)
             data: [120, 132, 101, 134, 90, 230, 210]
         },
         {
@@ -61,9 +61,9 @@ let option = {
                     position: 'bottom'
                 }
             },
-            areaStyle: {
-                normal: {}
-            },
+            // areaStyle: {
+            //     normal: {}
+            // },
             data: [320, 332, 301, 334, 390, 330, 320]
         },
         {
@@ -76,9 +76,9 @@ let option = {
                     position: 'top'
                 }
             },
-            areaStyle: {
-                normal: {}
-            },
+            // areaStyle: {
+            //     normal: {}
+            // },
             data: [820, 932, 901, 934, 1290, 1330, 1320]
         }
     ]
