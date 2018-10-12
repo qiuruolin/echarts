@@ -28,9 +28,10 @@ module.exports = {
                     fallback: 'style-loader',
                     use: [{
                         loader: 'css-loader',
-                        options: {
-                            modules: true
-                        }
+                        // 使css不模块化
+                        // options: {
+                        //     modules: true
+                        // }
                     }]
                 })
             }
