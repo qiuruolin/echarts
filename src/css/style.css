@@ -1,8 +1,11 @@
 #main {
-    width: 800px;
-    height: 600px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap
 }
 
 .test {
-    color: red;
+    width: 25%;
+    height: 400px;
+    margin: 10px;
 }
