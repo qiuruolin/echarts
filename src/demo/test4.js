@@ -13,7 +13,7 @@ for (var i = 1; i < 20000; i++) {
 let option = {
     tooltip: {
         trigger: 'axis',
-        position: function (pt) {
+        position: function (pt) { //提示框浮层的位置，默认不设置时位置会跟随鼠标的位置。
             return [pt[0], '10%'];
         }
     },
