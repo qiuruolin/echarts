@@ -28,10 +28,10 @@ option = {
     },
     legend: {
         top: 'bottom',
-        data:['意向']
+        data: ['意向']
     },
     tooltip: {
-        triggerOn: 'none',
+        triggerOn: 'none', //none => tooltip不会随着鼠标的移动显示，而是固定在position的位置
         position: function (pt) {
             return [pt[0], 130];
         }
@@ -65,7 +65,7 @@ option = {
                 },
                 backgroundColor: '#004E52'
             },
-            handle: {
+            handle: { //图下移动的图标
                 show: true,
                 color: '#004E52'
             }
@@ -98,10 +98,9 @@ option = {
         type: 'inside',
         throttle: 50
     }],
-    series: [
-        {
-            name:'模拟数据',
-            type:'line',
+    series: [{
+            name: '模拟数据',
+            type: 'line',
             smooth: true,
             symbol: 'circle',
             symbolSize: 5,
@@ -112,7 +111,7 @@ option = {
                 }
             },
             stack: 'a',
-            areaStyle: {
+            areaStyle: { //设置区域颜色渐变
                 normal: {
                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                         offset: 0,
@@ -126,9 +125,9 @@ option = {
             data: data
         },
         {
-            name:'模拟数据',
-            type:'line',
-            smooth:true,
+            name: '模拟数据',
+            type: 'line',
+            smooth: true,
             stack: 'a',
             symbol: 'circle',
             symbolSize: 5,
@@ -154,6 +153,6 @@ option = {
 
     ]
 };
-module.export = function(){
-  myChart.setOption(option)
+module.export = function () {
+    myChart.setOption(option)
 }()

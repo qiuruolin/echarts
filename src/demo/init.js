@@ -2,7 +2,7 @@ module.exports = function () {
     const main = document.getElementById("main")
 
     let count = 0
-    const limit = 20
+    const limit = 30
 
     while (count++ < limit) {
         const test = document.createElement('div')
